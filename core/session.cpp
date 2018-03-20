@@ -20,19 +20,14 @@
 #include "sessionhistory.h"
 #include "variable.h"
 #include "evaluator.h"
+#include "functions.h"
 
 #include <QFile>
 #include <QJsonDocument>
-#include <functions.h>
-
-
-
-
-
 
 void Session::serialize(QJsonObject &json) const
 {
-    json["version"] = QString(SPEEDCRUNCH_VERSION);
+    json["version"] = QString("1.0");
 
     // history
     QJsonArray hist_entries;
@@ -106,7 +101,7 @@ int Session::deSerialize(const QJsonObject &json, bool merge=false)
         }
     }
 
-    return version==SPEEDCRUNCH_VERSION;
+    return version == "1.0";
 }
 
 void Session::addVariable(const Variable &var)

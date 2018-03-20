@@ -18,12 +18,13 @@
 
 #include "rational.h"
 #include "math/hmath.h"
-#include "core/numberformatter.h"
+#include "numberformatter.h"
 
 #include <cmath>
 #include <QString>
 #include <QStringList>
 #include <limits.h>
+
 
 void Rational::normalize()
 {

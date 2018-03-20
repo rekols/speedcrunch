@@ -20,7 +20,7 @@
 #ifndef CORE_NUMBERFORMATTER_H
 #define CORE_NUMBERFORMATTER_H
 
-#include "math/quantity.h"
+#include "quantity.h"
 
 #include <QtCore/QString>
 

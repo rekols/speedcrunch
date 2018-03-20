@@ -20,12 +20,15 @@
 #include "sessionhistory.h"
 #include "variable.h"
 #include "evaluator.h"
-#include "functions.h"
 
 #include <QFile>
 #include <QJsonDocument>
+#include <functions.h>
 
-static const QString SPEEDCRUNCH_VERSION = "1.0";
+
+
+
+
 
 void Session::serialize(QJsonObject &json) const
 {
